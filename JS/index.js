@@ -26,6 +26,10 @@ if(isSignedUp){
 }
 
 subBtn.addEventListener("click", async ()=>{
+    if (input.value < 1 || input.value > 10){
+        label.innerText = "Please choose a name shorter than 10."
+        return
+    }
     const dataInput = input.value
     input.value = "";
     input.disabled = true;
