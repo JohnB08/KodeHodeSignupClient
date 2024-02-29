@@ -2,7 +2,7 @@ const input = document.querySelector("#usernameInput")
 const subBtn = document.querySelector(".signUpButton")
 const label = document.querySelector(".inputLabel")
 
-const url = "http://localhost:3000/newUser"
+const url = "https://mkmiddleman.onrender.com/newUser"
 
 const fetchToExpressServer = async(username)=>{
     const headers = {
